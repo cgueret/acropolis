@@ -31,7 +31,7 @@ if [ "${do_init}" = true ] ; then
 	# Use twine to migrate the schema for 'spindle'
 	echo "$(date) - doing schema migration with Twine"
 	twine -c /usr/etc/twine.conf -S >/dev/null 2>&1
-	wait_for_schema spindle com.github.bbcarchdev.spindle.twine 24
+	wait_for_schema spindle com.github.bbcarchdev.spindle.twine 25
 	wait_for_schema twine com.github.bbcarchdev.twine 1
 
 	# Use twine to migrate the schema for 'spindle'

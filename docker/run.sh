@@ -13,7 +13,7 @@ sed -i -e "s|ACROPOLIS_HOSTNAME|${ACROPOLIS_HOSTNAME-localhost}|" /usr/etc/quilt
 wait_for_service postgres 5432
 
 # Check individual databases are initialised
-wait_for_schema spindle com.github.bbcarchdev.spindle.twine 24
+wait_for_schema spindle com.github.bbcarchdev.spindle.twine 25
 wait_for_schema twine com.github.bbcarchdev.twine 1
 wait_for_schema anansi com.github.nevali.crawl.db 7
 wait_for_schema cluster com.github.bbcarchdev.libcluster 5
