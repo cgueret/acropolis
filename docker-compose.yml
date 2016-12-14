@@ -52,8 +52,8 @@ services:
   # Data processing
   twine-spindle:
     image: acropolis
-    #command: /usr/sbin/twine-writerd -d -c /usr/etc/twine.conf -f
-    command: tail -f /dev/null
+    command: /usr/sbin/twine-writerd -d -c /usr/etc/twine.conf -f
+    #command: tail -f /dev/null
     entrypoint:
       - ./docker/run.sh
     depends_on:
